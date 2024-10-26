@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0d0d0d;
+    color: #33ffff;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #33ffff;
+}
+
+.puzzle {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border: 2px solid #33ffff;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    color: #33ffff;
+}
+
+h2 {
+    color: #33ffff;
+}
+
+/* Estilos del tablero de ajedrez */
+.chess-board {
+    margin: 20px auto;
+    border: 2px solid #33ffff;
+    border-collapse: collapse;
+}
+
+.chess-board td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    cursor: pointer;
+    color: transparent; /* Oculta el número */
+}
+
+/* Estilos de las casillas del tablero */
+.chess-board td:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+.chess-board td:nth-child(odd) {
+    background-color: #33ffff;
+}
+
+.chess-board tr:nth-child(even) td:nth-child(odd),
+.chess-board tr:nth-child(odd) td:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+/* Casilla con el número oculto */
+.hidden-number {
+    color: transparent; /* Oculta el número */
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.hidden-number:hover {
+    background-color: #33ffff; /* Cambia el color de fondo al pasar el ratón */
+    
+}
+
+/* Estilo para las casillas más claras */
+.chess-board td.highlighted {
+    background-color: #33ffff;
+}
