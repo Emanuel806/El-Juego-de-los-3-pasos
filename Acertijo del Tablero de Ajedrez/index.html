@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room - Acertijo del Tablero de Ajedrez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header con el logo -->
+    <header>
+        <img src="logo.png" alt="Logo de la Escape Room" class="logo">
+        <h1>Acertijo del Tablero de Ajedrez</h1>
+    </header>
+
+    <!-- Main con la tabla del tablero de ajedrez -->
+    <main>
+        <section class="puzzle">
+            <h2>Encuentra el dígito oculto</h2>
+            <p>Haz clic en la casilla correcta para revelar el número.</p>
+            <table class="chess-board">
+                <!-- Cada fila del tablero de ajedrez -->
+                <tr>
+                    <td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td>
+                </tr>
+                <tr>
+                    <td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td class="highlighted"></td><td></td><td class="highlighted hidden-number">7</td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td>
+                </tr>
+                <tr>
+                    <td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td>
+                </tr>
+                <tr>
+                    <td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td><td></td><td class="highlighted"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- JavaScript para revelar el dígito oculto -->
+    <script>
+        document.querySelector('.hidden-number').onclick = function() {
+            this.style.color = "#1a1a1a"; // Cambia el color al color negro
+            this.style.fontWeight = "bold";
+        };
+    </script>
+</body>
+</html>
+
+</html>
