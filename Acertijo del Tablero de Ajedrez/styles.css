@@ -53,22 +53,14 @@ h2 {
     vertical-align: middle;
     font-size: 20px;
     cursor: pointer;
-    color: transparent; /* Oculta el número */
 }
 
-/* Estilos de las casillas del tablero */
-.chess-board td:nth-child(even) {
-    background-color: #1a1a1a;
+.letras {
+    background-color: transparent;
+    color: #33ffff;
+    user-select: none;
 }
 
-.chess-board td:nth-child(odd) {
-    background-color: #33ffff;
-}
-
-.chess-board tr:nth-child(even) td:nth-child(odd),
-.chess-board tr:nth-child(odd) td:nth-child(even) {
-    background-color: #1a1a1a;
-}
 
 /* Casilla con el número oculto */
 .hidden-number {
@@ -82,7 +74,11 @@ h2 {
     
 }
 
-/* Estilo para las casillas más claras */
+/* Estilo para las casillas */
 .chess-board td.highlighted {
     background-color: #33ffff;
+}
+
+.chess-board td.dark {
+    background-color: #1a1a1a;
 }
