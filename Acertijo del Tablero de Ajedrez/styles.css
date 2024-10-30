@@ -82,3 +82,12 @@ h2 {
 .chess-board td.dark {
     background-color: #1a1a1a;
 }
+
+table tr td:nth-child(8) {
+    border-right: 1px solid #33ffff ;
+}
+
+table tr:nth-child(8) td {
+    border-bottom: 1px solid #33ffff ;
+}
+
