@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El juego del Ahorcado</title>
+    <link rel="stylesheet" href="Ahorcado.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Juego del Ahorcado</h1>
+        <div class="figure-container">
+            <div class="figure-part head"></div>
+            <div class="figure-part body"></div>
+            <div class="figure-part left-arm"></div>
+            <div class="figure-part right-arm"></div>
+            <div class="figure-part left-leg"></div>
+            <div class="figure-part right-leg"></div>
+        </div>
+        <div class="word-container">
+            <p class="hidden-word">_ _ _ _ _</p>
+        </div>
+        <div class="letters-container">
+            <p>Introduce una letra:</p>
+            <input type="text" maxlength="1" id="letter-input">
+            <button id="submit-btn" onclick="alert('Fijate en el código CSS de esta página')">Adivinar</button>
+        </div>
+    </div> 
+</body>
+</html>
